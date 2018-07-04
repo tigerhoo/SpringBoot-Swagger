@@ -14,7 +14,7 @@ import java.util.Map;
  * @email huyongxing@qihaiyun.com
  * @date 2018/7/3 16:10
  */
-@Api(value = "/api",tags = "demo家族")
+@Api(tags = "demo家族")
 @RestController
 @RequestMapping("/api")
 public class Demo2Controller {
