@@ -2,8 +2,10 @@ package com.damao.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
+import springfox.documentation.service.ApiInfo;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger.web.*;
@@ -22,9 +24,23 @@ public class Swagger2Config {
     @Bean
     public Docket petApi() {
         return new Docket(DocumentationType.SWAGGER_2)
+                .apiInfo(apiInfo())
                 .select()
                 .apis(RequestHandlerSelectors.any())
                 .paths(PathSelectors.any())
+                .build();
+    }
+
+    private ApiInfo apiInfo() {
+        return new ApiInfoBuilder()
+                .title("大猫SwaggerUI 测试")
+                .description("这个描述有毛用啊这个描述有毛用啊这个描述有毛用啊" +
+                        "这个描述有毛用啊这个描述有毛用啊这个描述有毛用啊这个描述有毛用啊")
+                .termsOfServiceUrl("http://springfox.io")
+                .contact("springfox")
+                .license("Apache License Version 2.0")
+                .licenseUrl("https://github.com/springfox/springfox/blob/master/LICENSE")
+                .version("2.0")
                 .build();
     }
 
