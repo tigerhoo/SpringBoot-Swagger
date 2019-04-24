@@ -8,7 +8,7 @@ import org.springframework.web.socket.sockjs.SockJsService;
 
 /**
  * @author huyongxing
- * @email huyongxing@qihaiyun.com
+ * @site www.skson.com
  * @date 2018/7/3 15:36
  */
 @EnableWebSocket

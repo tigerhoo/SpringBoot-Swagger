@@ -6,7 +6,7 @@
 //
 ///**
 // * @author huyongxing
-// * @email huyongxing@qihaiyun.com
+// * @site www.skson.com
 // * @date 2018/7/4 17:22
 // */
 //public class WebSocketClient extends StandardWebSocketClient {

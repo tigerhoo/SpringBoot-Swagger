@@ -14,7 +14,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * @author huyongxing
- * @email huyongxing@qihaiyun.com
+ * @site www.skson.com
  * @date 2018/7/3 16:34
  */
 @Configuration
@@ -37,8 +37,8 @@ public class Swagger2Config {
                 .title("大猫SwaggerUI 测试")
                 .description("这个描述有毛用啊这个描述有毛用啊这个描述有毛用啊" +
                         "这个描述有毛用啊这个描述有毛用啊这个描述有毛用啊这个描述有毛用啊")
-                .termsOfServiceUrl("http://www.qihaiyun.com")
-                .contact(new Contact("tiger","https://www.damao.com","huyongxing@qihaiyun.com"))
+                .termsOfServiceUrl("http://www.skson.com")
+                .contact(new Contact("tiger","https://www.damao.com","huyongxing@skson.com"))
                 .version("2.0")
                 .build();
     }
